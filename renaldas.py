@@ -23,7 +23,6 @@ sūris = {"produktas" : "jogurtas", "Kaina": 2.99, "Kcal": 100, "Galiojimo laika
 produktai = [jautiena, vistiena, kiauliena, morkos, brokolis, pomidorai, pienas, sūris, jogurtas]
 
 while True:
-    print(f"Tavo krepselyje yra {krepselis} produktai.")
     print("Pasirinkite gaminį:")
     print("1 - Mesos gaminiai")
     print("2 - Daržovės")
@@ -39,16 +38,16 @@ while True:
         
         if antras_pasirinkimas == "0":
             break
-        if pasirinkimas == "4":
-            print(f"Tavo krepselyje yra {krepselis} produktai.")
-            pass
-
+        elif antras_pasirinkimas == "4":
+            print(f"Tavo krepselis: {krepselis}")
+           
 
         elif antras_pasirinkimas in {"1", "2", "3"}:
             print(f"Tu pasirinkai: {list(mesos_gaminiai)[int(antras_pasirinkimas) - 1]}")
             trecias_pasirinkimas = input("1 - ideti i krepseli, 2 - isimti is krepselio: ")
             if trecias_pasirinkimas == "1":
                 krepselis.append(vistiena)
+                print(f"Tavo krepselyje yra {krepselis} produktai.")
 
             else:
                  print("Neteisingas pasirinkimo numeris. Bandykite dar kartą.")
