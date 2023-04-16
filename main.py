@@ -141,10 +141,12 @@ while True:
             pass
         
         elif choice == 2:
-            # for pirkinys in pirkiniai:
-                # if pirkinys in produktu_info.keys().keys():
-                    #print(produktu_info.keys().get(pirkinys)) # logika gauti pirkinio value
-            pass
+            for pirkinys in pirkiniai:
+                for pirkinio_tipas in produktu_info.values():
+                    if pirkinys in pirkinio_tipas:
+                        print(f"{pirkinys} - Kaina: {pirkinio_tipas.get(pirkinys).get('kaina')},\
+ Maistine Verte: {pirkinio_tipas.get(pirkinys).get('maistine_verte')},\
+ Galiojimo data: {pirkinio_tipas.get(pirkinys).get('galiojimo_data')}") # logika gauti pirkinio value
         
         elif choice <= 0 or choice > 2:
             continue
