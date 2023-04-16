@@ -2,9 +2,9 @@ krepselis = []
 
 
 # Produktu menu
-mesos_gaminiai = {"jautiena", "kiauliena", "vistiena"}
-darzoves = {"brokolis", "morkos", "pomidorai"}
-pieno = {"jogurtas", "pienas", "sūris"}
+mesos_gaminiai = ["jautiena", "kiauliena", "vistiena"]
+darzoves = ["brokolis", "morkos", "pomidorai"]
+pieno = ["jogurtas", "pienas", "sūris"]
 
 # Produktu aprasymas
 jautiena = {"produktas" : "jautiena", "Kaina": 15.99, "Kcal": 250, "Galiojimo laikas": "2023-04-30"}
@@ -32,19 +32,21 @@ while True:
     print("0 - Baigti")
     
     pasirinkimas = input("Įveskite pasirinkimo numerį: ")
+    ###
+    if pasirinkimas == "0":
+        break
     
-    if pasirinkimas == "1":
+    elif pasirinkimas == "1":
         print(f"Tu pasirinkai mesos gaminius: {mesos_gaminiai}")
         antras_pasirinkimas = input("Pasirinkite (1-3) arba 0, jei nenorite nieko pasirinkti: ")
         
-        if antras_pasirinkimas == "0":
-            break
+
         if pasirinkimas == "4":
             print(f"Tavo krepselyje yra {krepselis} produktai.")
             pass
 
-
-        elif antras_pasirinkimas in {"1", "2", "3"}:
+            ###
+        elif antras_pasirinkimas in ["1", "2", "3"]:
             print(f"Tu pasirinkai: {list(mesos_gaminiai)[int(antras_pasirinkimas) - 1]}")
             trecias_pasirinkimas = input("1 - ideti i krepseli, 2 - isimti is krepselio: ")
             if trecias_pasirinkimas == "1":
