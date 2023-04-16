@@ -11,4 +11,4 @@ Gerimai = {"alus", "viskis", "romas"}
 
 Pusgaminiai = {"traskuciai", "krekeriai", "duonos trupiniai"}
 
-Kitos_iltinių_produktų_rūšys = {"dribsniai", "grūdėtų miltų produktai", "miltų mišiniai"}
+Kitos_miltinių_produktų_rūšys = {"dribsniai", "grūdėtų miltų produktai", "miltų mišiniai"}
