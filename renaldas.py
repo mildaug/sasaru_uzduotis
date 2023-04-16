@@ -23,6 +23,7 @@ sūris = {"produktas" : "jogurtas", "Kaina": 2.99, "Kcal": 100, "Galiojimo laika
 produktai = [jautiena, vistiena, kiauliena, morkos, brokolis, pomidorai, pienas, sūris, jogurtas]
 
 while True:
+    print(f"Tavo krepselyje yra {krepselis} produktai.")
     print("Pasirinkite gaminį:")
     print("1 - Mesos gaminiai")
     print("2 - Daržovės")
@@ -35,50 +36,25 @@ while True:
     if pasirinkimas == "1":
         print(f"Tu pasirinkai mesos gaminius: {mesos_gaminiai}")
         antras_pasirinkimas = input("Pasirinkite (1-3) arba 0, jei nenorite nieko pasirinkti: ")
-
-        if pasirinkimas == "4":
-            print(krepselis)
         
         if antras_pasirinkimas == "0":
             break
+        if pasirinkimas == "4":
+            print(f"Tavo krepselyje yra {krepselis} produktai.")
+            pass
 
 
         elif antras_pasirinkimas in {"1", "2", "3"}:
             print(f"Tu pasirinkai: {list(mesos_gaminiai)[int(antras_pasirinkimas) - 1]}")
             trecias_pasirinkimas = input("1 - ideti i krepseli, 2 - isimti is krepselio: ")
             if trecias_pasirinkimas == "1":
-                krepselis += [vistiena]
-                print(krepselis)
+                krepselis.append(vistiena)
+
+            else:
+                 print("Neteisingas pasirinkimo numeris. Bandykite dar kartą.")
+
                  
 
-
-# while True:
-#     print("Pasirinkite gaminį:")
-#     print("1 - Mesos gaminiai")
-#     print("2 - Daržovės")
-#     print("3 - Pieno gaminiai")
-#     print("0 - Baigti")
-    
-#     pasirinkimas = input("Įveskite pasirinkimo numerį: ")
-    
-#     if pasirinkimas == "1":
-#         print(f"Tu pasirinkai mesos gaminius: {mesos_gaminiai}")
-#         antras_pasirinkimas = input("Pasirinkite (1-3) arba 0, jei nenorite nieko pasirinkti: ")
-
-#         if antras_pasirinkimas == "0":
-#             break
-
-#         elif antras_pasirinkimas in {"1", "2", "3"}:
-#             print(f"Tu pasirinkai: {list(mesos_gaminiai)[int(antras_pasirinkimas) - 1]}")
-#             trecias_pasirinkimas = input("1 - ideti i krepseli, 2 - isimti is krepselio: ")
-
-#             if trecias_pasirinkimas == vistiena == "1":
-#                 krepselis.append(vistiena)
-
-
-#                 print(f"Tavo krepselyje yra {krepselis} produktai.")
-#             else:
-#                 print("Neteisingas pasirinkimo numeris. Bandykite dar kartą.")
 
 
 
