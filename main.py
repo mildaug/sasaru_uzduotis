@@ -104,11 +104,14 @@ while True:
         if pasirinktas_produktas == 1:
             print('Pasirinkite produkta is saraso:')
             for i in range(len(zuvies_produktai)):
+                # problema, printina "zuvies produktus" kaip listus, o turetu printinti tik pavadinimus 
                 print(f"nr: {i+1} - {zuvies_produktai[i]}")
 
             produkto_index = int(input('Iveskite produkto numeri:'))
             if produkto_index - 1 in range(len(zuvies_produktai)):                         
                 
+                #problema kad ideda visa lista, turetu ideti tik pavadinima.
+
                 pirkiniai.append(zuvies_produktai[produkto_index - 1])
                 print(f"Produktas {zuvies_produktai[produkto_index - 1]} itrauktas i pirkiniu krepseli.")
                 
@@ -146,9 +149,13 @@ while True:
         """)
         choice = int(input('jusu pasirinkimas: '))
         if choice == 1:
+            # pirkiniai.pop(produkto_pavadinimas)
             pass
         
         elif choice == 2:
+            # for pirkinys in pirkiniai:
+                # if pirkinys in produktu_info.keys().keys():
+                    #print(produktu_info.keys().get(pirkinys)) # logika gauti pirkinio value
             pass
         
         elif choice <= 0 or choice > 2:
