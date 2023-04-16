@@ -38,16 +38,24 @@ pirkiniai = []
 zuvies_produktai =[['silke surime', 14.99, '500kcal', '2023-05-16'], ['karpio kapotinis', 14.99, '500kcal', '2023-05-16'],\
                    ['juros eserys', 14.99, '500kcal', '2023-05-16'], ['menkes vyniotinis', 14.99, '500kcal', '2023-05-16'],\
                    ['lydekaite', 14.99, '500kcal', '2023-05-16'], ['lasisos file', 14.99, '500kcal', '2023-05-16'],\
-                   ['koldunai su karosu', 14.99, '500kcal', '2023-05-16']
-                ]
+                   ['koldunai su karosu', 14.99, '500kcal', '2023-05-16']]
+
 pieno_produktai = [['pienas', 3.99, '500kcal', '2023-05-16'], ['surelis', 3.99, '500kcal', '2023-05-16'], ['varske', 3.99, '500kcal', '2023-05-16'],\
                    ['jogurtas', 3.99, '500kcal', '2023-05-16'], ['suris', 3.99, '500kcal', '2023-05-16'], ['majonezas', 3.99, '500kcal', '2023-05-16'],\
                    ['sviestas', 3.99, '500kcal', '2023-05-16'], ['grietine', 3.99, '500kcal', '2023-05-16'], ['grietinele', 3.99, '500kcal', '2023-05-16'],\
-                   ['kefyras', 3.99, '500kcal', '2023-05-16']
-                ]
+                   ['kefyras', 3.99, '500kcal', '2023-05-16']]
 
-miltiniai_produktai = ["kvieciu miltai", "rugiu miltai" , "kukuruzu miltai", "ryziu miltai", 'makaronai penne', 'bociu duona', 'kruasanas', 'meduoliai', 'krekeriai' \
-                        'virtinukai "Dziaugsmas"', 'saldyti varskeciai']
+miltiniai_produktai = [['kvieciu miltai', 1.49, '350kcal', '2024-01-30'], ['rugiu miltai', 1.49, '200kcal', '2024-01-30'],\
+                        ['kukuruzu miltai', 1.49, '200kcal', '2024-01-30'], ['ryziu miltai', 1.49, '350kcal', '2024-01-30'],\
+                        ['makaronai penne', 1.49, '350kcal', '2024-01-30'] ['bociu duona', 1.49, '350kcal', '2024-01-30'], \
+                        ['kruasanas', 1.49, '350kcal', '2024-01-30'], ['meduoliai', 1.49, '350kcal', '2024-01-30'],\
+                        ['krekeriai' , 1.49, '350kcal', '2024-01-30'], ['virtinukai "Dziaugsmas"', 1.49, '350kcal', '2024-01-30'],\
+                        ['saldyti varskeciai', 1.49, '350kcal', '2024-01-30']]
+
+darzoves = [['pomidorai', 3.99, 'kcal', '2023-05-16'], ['pupeles', 3.99, '500kcal', '2023-05-16'], ['bulves', 3.99, '500kcal', '2023-05-16'],\
+                   ['agurkai', 3.99, '500kcal', '2023-05-16'], ['baklazanai', 3.99, '500kcal', '2023-05-16'], ['paprikos', 3.99, '500kcal', '2023-05-16'],\
+                   ['pievagrybiai', 3.99, '500kcal', '2023-05-16'], ['kopustas', 3.99, '500kcal', '2023-05-16'], ['salotos', 3.99, '500kcal', '2023-05-16'],\
+                   ['pipirai', 3.99, '500kcal', '2023-05-16']]
 
 {"kaina": None, "maistine_verte": None, "galiojimo_data": None}
 produktu_info = {
