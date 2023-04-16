@@ -15,11 +15,10 @@ while True:
     """    
     )
     try:
-        choice = int(input("pasirinkite norima operacija (0-2-) :"))
+        choice = int(input("Pasirinkite norima operacija (1-4 arba 0) :"))
     except:
-        print("NaN - Not a Number!")
+        print("Pasirinkite teisinga funkcija")
         continue
-
 
     if choice == 1:
         pass
