@@ -52,12 +52,12 @@ Kitos_iltinių_produktų_rūšys = {"dribsniai", "grūdėtų miltų produktai", 
 
 produktu_info = {
     "zuvies_produktai": {'silke surime': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                                      'karpio kapotinis': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                                      'juros eserys': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                                      'menkes vyniotinis': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                                      'lydekaite': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                                      'lasisos file': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                                      'koldunai su karosu': {"kaina": None, "maistine_verte": None, "galiojimo_data": None}
+                        'karpio kapotinis': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
+                        'juros eserys': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
+                        'menkes vyniotinis': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
+                        'lydekaite': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
+                        'lasisos file': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
+                        'koldunai su karosu': {"kaina": None, "maistine_verte": None, "galiojimo_data": None}
                                       },
     "pieno_produktai": { str(pieno_produktai[pieno_produktas][0]):{"kaina": pieno_produktai[pieno_produktas][1], "maistine_verte": pieno_produktai[pieno_produktas][2], "galiojimo_data": pieno_produktai[pieno_produktas][3]} for pieno_produktas in range(len(pieno_produktai))},
     "miltiniai_produktai": { str(miltinis_produktas):{"kaina": None, "maistine_verte": None, "galiojimo_data": None} for miltinis_produktas in miltiniai_produktai}
