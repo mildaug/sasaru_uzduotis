@@ -35,30 +35,23 @@ pirkiniai = []
 
 
 
-zuvies_produktai =[['silke surime', 14.99, '500kcal', '2023-05-16'], 'karpio kapotinis', 'juros eserys', 'menkes vyniotinis', 'lydekaite',\
-                    'lasisos file', 'koldunai su karosu']
-pieno_produktai = ['pienas', 'surelis', 'varske', 'jogurtas', 'suris', 'majonezas', 'sviestas', 'grietine', 'grietinele', 'kefyras']
+zuvies_produktai =[['silke surime', 14.99, '500kcal', '2023-05-16'], ['karpio kapotinis', 14.99, '500kcal', '2023-05-16'],\
+                   ['juros eserys', 14.99, '500kcal', '2023-05-16'], ['menkes vyniotinis', 14.99, '500kcal', '2023-05-16'],\
+                   ['lydekaite', 14.99, '500kcal', '2023-05-16'], ['lasisos file', 14.99, '500kcal', '2023-05-16'],\
+                   ['koldunai su karosu', 14.99, '500kcal', '2023-05-16']
+                ]
+pieno_produktai = [['pienas', 3.99, '500kcal', '2023-05-16'], ['surelis', 3.99, '500kcal', '2023-05-16'], ['varske', 3.99, '500kcal', '2023-05-16'],\
+                   ['jogurtas', 3.99, '500kcal', '2023-05-16'], ['suris', 3.99, '500kcal', '2023-05-16'], ['majonezas', 3.99, '500kcal', '2023-05-16'],\
+                   ['sviestas', 3.99, '500kcal', '2023-05-16'], ['grietine', 3.99, '500kcal', '2023-05-16'], ['grietinele', 3.99, '500kcal', '2023-05-16'],\
+                   ['kefyras', 3.99, '500kcal', '2023-05-16']
+                ]
 
 miltiniai_produktai = ["kvieciu miltai", "rugiu miltai" , "kukuruzu miltai", "ryziu miltai", 'makaronai penne', 'bociu duona', 'kruasanas', 'meduoliai', 'krekeriai' \
                         'virtinukai "Dziaugsmas"', 'saldyti varskeciai']
 
-Miltai = {"kvieciu", "rugiu", "miežiu", "kukuruzu", "ryziu"}
-Tešlos =  {"makaronai", "duonos gaminiai", "blynai", "koldūnai"}
-Kepiniai = {"pyragai", "tortai", "sausainiai", "misiniai"}
-Padažai_prieskoniai = {"miltiniai padažai", "prieskoniai"}
-Gerimai = {"alus", "viskis", "romas"}
-Pusgaminiai = {"traskuciai", "krekeriai", "duonos trupiniai"}
-Kitos_iltinių_produktų_rūšys = {"dribsniai", "grūdėtų miltų produktai", "miltų mišiniai"}
-
+{"kaina": None, "maistine_verte": None, "galiojimo_data": None}
 produktu_info = {
-    "zuvies_produktai": {'silke surime': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                        'karpio kapotinis': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                        'juros eserys': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                        'menkes vyniotinis': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                        'lydekaite': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                        'lasisos file': {"kaina": None, "maistine_verte": None, "galiojimo_data": None},
-                        'koldunai su karosu': {"kaina": None, "maistine_verte": None, "galiojimo_data": None}
-                                      },
+    "zuvies_produktai": { str(zuvies_produktai[zuvies_produktas][0]):{"kaina": zuvies_produktai[zuvies_produktas][1], "maistine_verte": zuvies_produktai[zuvies_produktas][2], "galiojimo_data": zuvies_produktai[zuvies_produktas][3]} for zuvies_produktas in range(len(zuvies_produktai))},
     "pieno_produktai": { str(pieno_produktai[pieno_produktas][0]):{"kaina": pieno_produktai[pieno_produktas][1], "maistine_verte": pieno_produktai[pieno_produktas][2], "galiojimo_data": pieno_produktai[pieno_produktas][3]} for pieno_produktas in range(len(pieno_produktai))},
     "miltiniai_produktai": { str(miltinis_produktas):{"kaina": None, "maistine_verte": None, "galiojimo_data": None} for miltinis_produktas in miltiniai_produktai}
 }
@@ -66,11 +59,6 @@ produktu_info = {
 
 
 
-
-
-
-for i in range(len(zuvies_produktai)):
-    print(f"{i+1} - {zuvies_produktai[i]}")
 #meniu
 
 while True:
@@ -104,16 +92,16 @@ while True:
         if pasirinktas_produktas == 1:
             print('Pasirinkite produkta is saraso:')
             for i in range(len(zuvies_produktai)):
-                # problema, printina "zuvies produktus" kaip listus, o turetu printinti tik pavadinimus 
-                print(f"nr: {i+1} - {zuvies_produktai[i]}")
+                # problema, printina "zuvies produktus" kaip listus, o turetu printinti tik pavadinimus - pataisyta
+                print(f"nr: {i+1} - {zuvies_produktai[i][0]}")
 
             produkto_index = int(input('Iveskite produkto numeri:'))
             if produkto_index - 1 in range(len(zuvies_produktai)):                         
                 
-                #problema kad ideda visa lista, turetu ideti tik pavadinima.
+                #problema kad ideda visa lista, turetu ideti tik pavadinima. - pataisyta
 
-                pirkiniai.append(zuvies_produktai[produkto_index - 1])
-                print(f"Produktas {zuvies_produktai[produkto_index - 1]} itrauktas i pirkiniu krepseli.")
+                pirkiniai.append(zuvies_produktai[produkto_index - 1][0])
+                print(f"Produktas {zuvies_produktai[produkto_index - 1][0]} itrauktas i pirkiniu krepseli.")
                 
         
         
