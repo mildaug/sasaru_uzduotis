@@ -47,7 +47,7 @@ pieno_produktai = [['pienas', 3.99, '500kcal', '2023-05-16'], ['surelis', 3.99, 
 
 miltiniai_produktai = [['kvieciu miltai', 1.49, '350kcal', '2024-01-30'], ['rugiu miltai', 1.49, '200kcal', '2024-01-30'],\
                         ['kukuruzu miltai', 1.49, '200kcal', '2024-01-30'], ['ryziu miltai', 1.49, '350kcal', '2024-01-30'],\
-                        ['makaronai penne', 1.49, '350kcal', '2024-01-30'] ['bociu duona', 1.49, '350kcal', '2024-01-30'], \
+                        ['makaronai penne', 1.49, '350kcal', '2024-01-30'], ['bociu duona', 1.49, '350kcal', '2024-01-30'], \
                         ['kruasanas', 1.49, '350kcal', '2024-01-30'], ['meduoliai', 1.49, '350kcal', '2024-01-30'],\
                         ['krekeriai' , 1.49, '350kcal', '2024-01-30'], ['virtinukai "Dziaugsmas"', 1.49, '350kcal', '2024-01-30'],\
                         ['saldyti varskeciai', 1.49, '350kcal', '2024-01-30']]
